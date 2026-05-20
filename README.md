@@ -14,13 +14,12 @@ CIKM2026/
 ├── scripts/             # Grid runners, export, tables, figures
 ├── config/              # RecBole YAML (ml-1m, lastfm, per model)
 ├── tests/               # Unit tests for grouping, transfer, audit
-├── docs/                # Research plan and integration notes
 └── results/             # Paper figures + CSV summaries (committed)
     ├── figures/
     └── tables/
 ```
 
-## Method (short)
+## Method
 
 Items are split into popularity groups (default: 10% / 20% / 30% / 40% by train degree). For each group \(g\), catalog share \(C_g\) and interaction mass \(M_g\) define dominance \(D_g = M_g/(C_g+\epsilon)\). Training edges are weighted \(\tilde w_{ui} = (D_{g(i)}+\epsilon)^{-\alpha}\). **Only weighted backbones** consume these weights; vanilla LightGCN is an α-invariant control.
 
@@ -78,19 +77,4 @@ python scripts/plot_paper_figures_from_export.py \
 
 See [`results/`](results/): Pareto plots (`fig_pareto_*`), user-group heatmaps (`fig_user_heatmap_*`), and tables (`all_runs_metrics_export.csv`, etc.).
 
-## Documentation
 
-- [Research plan & metrics](docs/MEG_RW_CIKM2026_RESEARCH_PLAN.md)
-- [RecBole integration](docs/RECBOLE_INTEGRATION.md)
-
-## Citation
-
-```bibtex
-@inproceedings{meg-rw-cikm2026,
-  title={MEG-RW: Multi-Group Exposure calibrated Graph Reweighting for Fairness in Recommendation},
-  booktitle={Proceedings of CIKM},
-  year={2026}
-}
-```
-
-(Update authors and venue when the camera-ready version is fixed.)
