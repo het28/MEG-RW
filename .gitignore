@@ -1,0 +1,32 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+dist/
+build/
+
+# RecBole / training artifacts (do not commit raw experiment trees)
+experiments/
+saved/
+dataset/
+log_tensorboard/
+
+# Local paper draft PDF (use paper/ for LaTeX)
+_CIKM_FULL__*.pdf
+*.pt
+*.pth
+*.ckpt
+
+# Large local-only assets
+external/
+agent-tools/
+*.log
+.DS_Store
+
+# Optional: keep paper draft PDF local (uncomment to track)
+# _CIKM_FULL__*.pdf

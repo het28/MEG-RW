@@ -1,0 +1,7 @@
+# Amazon Books + NeuMF
+dataset: amazon-books
+
+mf_embedding_size: 64
+mlp_embedding_size: 64
+mlp_hidden_size: [64, 32, 16, 8]
+dropout_prob: 0.0

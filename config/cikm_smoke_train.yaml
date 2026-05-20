@@ -1,0 +1,4 @@
+# Optional last-file override for quick pipeline checks (remove for paper runs).
+epochs: 2
+stopping_step: 2
+eval_step: 1

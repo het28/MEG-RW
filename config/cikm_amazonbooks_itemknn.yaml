@@ -1,0 +1,6 @@
+# Amazon Books + ItemKNN
+dataset: amazon-books
+
+k: 100
+knn_method: item
+shrink: 0.0

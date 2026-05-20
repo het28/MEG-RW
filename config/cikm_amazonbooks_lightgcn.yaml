@@ -1,0 +1,7 @@
+# Amazon Books + LightGCN-compatible hyperparameters
+dataset: amazon-books
+
+embedding_size: 64
+n_layers: 3
+reg_weight: 1.0e-4
+require_pow: false
